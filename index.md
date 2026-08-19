@@ -6,7 +6,7 @@ title: Volume Control 隐私政策
 # Volume Control 隐私政策
 
 生效日期：2026 年 8 月 17 日  
-最近更新日期：2026 年 8 月 18 日
+最近更新日期：2026 年 8 月 20 日
 
 Volume Control（以下简称“本应用”）由其开发者（以下简称“我们”）提供。本政策说明您使用本应用时，信息如何被处理。
 
@@ -21,10 +21,9 @@ Volume Control（以下简称“本应用”）由其开发者（以下简称“
 本应用仅在相关功能需要时请求以下权限：
 
 - **系统音频录制（部分 macOS 版本显示为“屏幕与系统音频录制”）：**用于在本机处理系统音频并为固定音量的输出设备提供软件音量控制；
-- **输入监控（可选）：**仅在您主动启用键盘音量控制时，用于读取音量增加、音量减少和静音媒体键事件。本应用不记录、保存或上传其他键盘输入；
 - **用户选择的文件：**仅在您主动导入或导出配置时，读取或写入您选择的文件。
 
-本应用不请求辅助功能权限。输入监控使用只读事件监听，不会拦截、修改或阻止系统按键事件。未允许输入监控时，菜单栏滑块、静音和设备切换等功能仍可使用。
+Mac App Store 版本不请求输入监控或辅助功能权限，也不监听键盘事件。音量控制通过应用的菜单栏界面完成。
 
 您可以随时在 macOS“系统设置”中更改权限。拒绝权限只会影响依赖该权限的功能。
 
@@ -75,7 +74,7 @@ Apple 对相关信息的处理受其隐私政策约束：[Apple 隐私政策](ht
 # Volume Control Privacy Policy
 
 **Effective date:** August 17, 2026  
-**Last updated:** August 18, 2026
+**Last updated:** August 20, 2026
 
 Volume Control (the “App”) is provided by its developer (“we”, “us”). This policy explains how information is handled when you use the App.
 
@@ -90,10 +89,9 @@ To remember your preferences, the App stores output-device identifiers and names
 The App requests system permissions only when required for the relevant feature:
 
 - **System Audio Recording (shown as “Screen & System Audio Recording” on some macOS versions):** processes system audio locally and provides software volume control for fixed-volume output devices;
-- **Input Monitoring (optional):** when you explicitly enable keyboard volume control, reads only volume-up, volume-down, and mute media-key events. The App does not record, save, or upload other keyboard input;
 - **User-selected files:** reads or writes only the file you choose when importing or exporting a configuration.
 
-The App does not request Accessibility permission. Input Monitoring uses a read-only event listener and does not intercept, modify, or block system key events. If Input Monitoring is not allowed, menu-bar sliders, mute, and device switching remain available.
+The Mac App Store build does not request Input Monitoring or Accessibility access and does not monitor keyboard events. Volume is controlled through the App's menu-bar interface.
 
 You can change these permissions at any time in macOS System Settings. Declining a permission only affects features that depend on it.
 
