@@ -1,8 +1,8 @@
 # Volume Control Privacy Policy
 
-Volume Control 隐私政策与支持页面，可直接用于 GitHub Pages。
+English privacy policy and support pages for Volume Control, ready for GitHub Pages.
 
-- 隐私政策：`index.md`
-- 技术支持：`support.md`
+- Privacy policy: `index.md`
+- Support: `support.md`
 
-联系邮箱：`onebooksoftware@outlook.com`
+Contact: `onebooksoftware@outlook.com`
