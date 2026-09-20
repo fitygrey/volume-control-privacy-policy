@@ -1,14 +1,83 @@
 ---
 layout: default
-title: Volume Control Privacy Policy
+title: Better Volume 隐私政策
 ---
 
-# Volume Control Privacy Policy
+# Better Volume 隐私政策
+
+生效日期：2026 年 8 月 17 日
+
+最近更新日期：2026 年 9 月 20 日
+
+Better Volume（以下简称“本应用”）由其开发者（以下简称“我们”）提供。本政策说明您使用本应用时，信息如何被处理。
+
+## 1. 我们处理的信息
+
+本应用的声音处理功能在您的 Mac 本机运行。为提供主音量、应用独立音量、均衡音量、声道控制和播放保护，本应用会在内存中实时处理系统音频。音频不会保存成录音文件，也不会上传给我们或第三方。
+
+为记住您的设置，本应用会在设备本地保存输出设备标识与名称、应用名称与 Bundle ID、音量、静音、声音处理选项及界面偏好。我们无法远程访问这些信息。
+
+## 2. 系统权限
+
+本应用仅在相关功能需要时请求以下权限：
+
+- **系统音频录制（部分 macOS 版本显示为“屏幕与系统音频录制”）：**用于在本机处理系统音频并为固定音量的输出设备提供软件音量控制；
+- **用户选择的文件：**仅在您主动导入或导出配置时，读取或写入您选择的文件。
+
+Mac App Store 版本不请求输入监控或辅助功能权限，也不安装全局键盘事件监视器。音量可以通过菜单栏控制；如果你主动设置全局快捷键，应用只会通过 macOS 注册你选择的精确组合键。
+
+您可以随时在 macOS“系统设置”中更改权限。拒绝权限只会影响依赖该权限的功能。
+
+## 3. 本地存储与诊断
+
+设备配置、应用音量规则、功能开关和基础运行状态保存在应用沙盒的 UserDefaults 中。7 天体验的开始日期优先通过无弹窗方式保存在 macOS 钥匙串中，并在应用的 Application Support 目录保存本地备份。当钥匙串访问受阻时，应用使用本地记录继续计算体验期限；不会因此重新开始体验。旧版本的本地体验记录会在需要时迁移。
+
+本应用使用 Apple MetricKit 在本机统计崩溃、卡顿和恢复次数，用于在诊断页面显示运行状态。应用不会自动把诊断内容发送给我们。只有当您主动复制并发送诊断信息时，接收方才会获得您选择分享的内容。
+
+## 4. 购买与 App Store
+
+订阅和永久解锁由 Apple 的 StoreKit 与 App Store 处理。本应用会读取 Apple 返回的商品信息和购买权益，以显示价格并解锁功能。我们不会接触或保存您的 Apple ID、银行卡或其他付款信息。
+
+Apple 对相关信息的处理受其隐私政策约束：[Apple 隐私政策](https://www.apple.com/legal/privacy/)。
+
+## 5. 网络与第三方服务
+
+本应用会连接 Apple 服务以加载内购商品、验证购买权益和检查 App Store 版本更新。本应用不包含广告 SDK、第三方分析 SDK、Firebase 或第三方崩溃统计服务。
+
+我们不出售、出租或向第三方提供您的个人信息、音频内容、设备配置或应用音量规则。
+
+## 6. 配置导入与导出
+
+当您使用配置导出功能时，配置文件会保存到您选择的位置。文件包含声音设置和设备配置，不包含音频内容。该文件的保存、分享与删除由您自行管理。
+
+## 7. 信息删除
+
+您可以在应用中修改或移除相应设置。仅删除应用程序通常不会同时清除沙盒设置、Application Support 目录或钥匙串中的记录。体验开始日期可能在重新安装后继续保留。若您希望删除这些本地记录，可以清理本应用的沙盒数据（包括 Application Support 中的 `com.shulinlou.soundcontrolformac/Trial/start-date.json`），并在“钥匙串访问”中删除服务名为 `com.shulinlou.soundcontrolformac.pro-trial` 的项目。我们无法远程访问或删除这些记录。
+
+您主动导出的配置文件需要在对应保存位置单独删除。
+
+## 8. 未成年人
+
+本应用不以儿童为目标用户，也不会主动收集未成年人的个人信息。未成年人应在监护人同意和指导下使用本应用。
+
+## 9. 政策更新
+
+我们可能因功能、法律法规或审核要求更新本政策。更新后的版本会发布在本页面；如法律要求，我们会在处理信息前取得相应同意。
+
+## 10. 联系我们
+
+如您对本政策有任何问题、意见或请求，请联系：
+
+[onebooksoftware@outlook.com](mailto:onebooksoftware@outlook.com)
+
+---
+
+# Better Volume Privacy Policy
 
 **Effective date:** August 17, 2026  
-**Last updated:** August 20, 2026
+**Last updated:** September 20, 2026
 
-Volume Control (the “App”) is provided by its developer (“we”, “us”). This policy explains how information is handled when you use the App.
+Better Volume (the “App”) is provided by its developer (“we”, “us”). This policy explains how information is handled when you use the App.
 
 ## 1. Information we process
 
@@ -23,13 +92,13 @@ The App requests system permissions only when required for the relevant feature:
 - **System Audio Recording (shown as “Screen & System Audio Recording” on some macOS versions):** processes system audio locally and provides software volume control for fixed-volume output devices;
 - **User-selected files:** reads or writes only the file you choose when importing or exporting a configuration.
 
-The Mac App Store build does not request Input Monitoring or Accessibility access and does not monitor keyboard events. Volume is controlled through the App's menu-bar interface.
+The Mac App Store build does not request Input Monitoring or Accessibility access and does not install a global keyboard-event monitor. Volume can be controlled from the menu bar. If you configure global shortcuts, the App uses macOS to register only the exact combinations you select.
 
 You can change these permissions at any time in macOS System Settings. Declining a permission only affects features that depend on it.
 
 ## 3. Local storage and diagnostics
 
-Device profiles, per-app volume rules, feature preferences, and basic health counters are stored in the App sandbox using UserDefaults. The start date of the seven-day trial is stored in the macOS Keychain to prevent the trial from restarting after the App is reinstalled.
+Device profiles, per-app volume rules, feature preferences, and basic health counters are stored in the App sandbox using UserDefaults. The start date of the seven-day trial is stored in the macOS Keychain without requesting an access prompt, with a local backup in the App’s Application Support directory. If Keychain access is unavailable, the App uses the local record to preserve the trial period rather than restarting it. Local trial records from earlier versions are migrated when needed.
 
 The App uses Apple MetricKit locally to count crashes, hangs, and recovery events for the diagnostics screen. Diagnostic information is not sent to us automatically. A recipient receives diagnostic information only if you choose to copy and share it.
 
@@ -51,7 +120,7 @@ When you export a configuration, the file is saved to the location you choose. I
 
 ## 7. Deletion
 
-You can change or remove settings in the App. Uninstalling the App removes local data in its sandbox. To prevent repeated trials, the trial start date stored in the macOS Keychain may remain after uninstalling the App. You can remove the Keychain item whose service name is `com.shulinlou.soundcontrolformac.pro-trial` using Keychain Access.
+You can change or remove settings in the App. Deleting the application alone does not normally remove sandbox settings, Application Support data, or Keychain records. The trial start date may therefore remain after reinstalling. To delete these local records, remove the App’s sandbox data, including `com.shulinlou.soundcontrolformac/Trial/start-date.json` in Application Support, and remove the Keychain item whose service name is `com.shulinlou.soundcontrolformac.pro-trial` using Keychain Access. We cannot access or delete these records remotely.
 
 Configuration files that you exported must be deleted separately from the location where you saved them.
 
