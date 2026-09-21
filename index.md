@@ -7,7 +7,7 @@ title: Better Volume 隐私政策
 
 生效日期：2026 年 8 月 17 日
 
-最近更新日期：2026 年 9 月 20 日
+最近更新日期：2026 年 9 月 21 日
 
 Better Volume（以下简称“本应用”）由其开发者（以下简称“我们”）提供。本政策说明您使用本应用时，信息如何被处理。
 
@@ -17,11 +17,14 @@ Better Volume（以下简称“本应用”）由其开发者（以下简称“�
 
 为记住您的设置，本应用会在设备本地保存输出设备标识与名称、应用名称与 Bundle ID、音量、静音、声音处理选项及界面偏好。我们无法远程访问这些信息。
 
+启用播放控制时，本应用会在本机读取系统当前媒体会话的播放器、歌曲、歌手、歌曲封面、播放状态和进度，用于展示播放卡片并执行您点击的播放、暂停、切歌或进度调整。歌曲信息和封面仅在内存中使用，不保存为收听历史，也不上传。您可以在设置中关闭播放控制。
+
 ## 2. 系统权限
 
 本应用仅在相关功能需要时请求以下权限：
 
 - **系统音频录制（部分 macOS 版本显示为“屏幕与系统音频录制”）：**用于在本机处理系统音频并为固定音量的输出设备提供软件音量控制；
+- **蓝牙：**仅在您点击显示已配对蓝牙设备时申请，用于读取已配对音频设备的名称、蓝牙地址和连接状态，以及执行您发起的连接或断开。不会扫描附近设备；隐藏设备的标识和名称只保存在本机，恢复显示不会改变系统配对记录。
 - **用户选择的文件：**仅在您主动导入或导出配置时，读取或写入您选择的文件。
 
 Mac App Store 版本不请求输入监控或辅助功能权限，也不安装全局键盘事件监视器。音量可以通过菜单栏控制；如果你主动设置全局快捷键，应用只会通过 macOS 注册你选择的精确组合键。
@@ -75,7 +78,7 @@ Apple 对相关信息的处理受其隐私政策约束：[Apple 隐私政策](ht
 # Better Volume Privacy Policy
 
 **Effective date:** August 17, 2026  
-**Last updated:** September 20, 2026
+**Last updated:** September 21, 2026
 
 Better Volume (the “App”) is provided by its developer (“we”, “us”). This policy explains how information is handled when you use the App.
 
@@ -85,11 +88,14 @@ The App processes sound locally on your Mac. To provide master volume, per-app v
 
 To remember your preferences, the App stores output-device identifiers and names, application names and bundle identifiers, volume and mute settings, audio-processing options, and interface preferences locally on your device. We cannot access this information remotely.
 
+When playback controls are enabled, the App reads the system’s current media session locally, including the player, track, artist, artwork, playback state, and position. This information is used to display the playback card and carry out your play, pause, track-change, and seek actions. Track information and artwork remain in memory, are not saved as listening history, and are not uploaded. Playback controls can be disabled in Settings.
+
 ## 2. System permissions
 
 The App requests system permissions only when required for the relevant feature:
 
 - **System Audio Recording (shown as “Screen & System Audio Recording” on some macOS versions):** processes system audio locally and provides software volume control for fixed-volume output devices;
+- **Bluetooth:** requested only when you choose to show paired Bluetooth devices. The App reads paired audio-device names, Bluetooth addresses, and connection states, and performs connections or disconnections you request. It does not scan nearby devices. Hidden-device identifiers and names are stored only locally; restoring visibility does not change system pairing records.
 - **User-selected files:** reads or writes only the file you choose when importing or exporting a configuration.
 
 The Mac App Store build does not request Input Monitoring or Accessibility access and does not install a global keyboard-event monitor. Volume can be controlled from the menu bar. If you configure global shortcuts, the App uses macOS to register only the exact combinations you select.
