@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Control volume for each app and switch audio outputs from your menu bar. Requires macOS 14.4 or later.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Better Volume — Volume control for every app</title>
+  <link rel="icon" href="assets/icon.png">
+  <link rel="stylesheet" href="style.css">
+  <script src="language.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="#" aria-label="Better Volume home"><img src="assets/icon.png" width="38" height="38" alt="">Better Volume</a>
+    <nav aria-label="Main navigation"><a href="#features">Features</a><a href="#faq">FAQ</a><a class="button small" href="https://apps.apple.com/app/id6801948961">Get the app <span aria-hidden="true">↗</span></a><div class="language-switch" role="group" aria-label="Language / 语言"><a href="index.html?lang=en" data-language="en" lang="en" aria-label="English" aria-current="true">EN</a><a href="zh.html?lang=zh" data-language="zh" lang="zh" aria-label="简体中文">中文</a></div></nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <h1 id="hero-title">Every app has a volume.<br>Now you’re <span>in control.</span></h1>
+      <p class="intro">App volumes and audio outputs, together in your menu bar.<br>Set the right level for music, videos, and calls.</p>
+      <div class="actions"><a class="button" href="https://apps.apple.com/app/id6801948961">Visit App Store <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg></a><button class="button secondary download-soon" type="button" disabled aria-describedby="version-hint">Download now <span class="soon-label">Coming soon</span></button></div>
+      <p class="version-hint" id="version-hint">App Store policies limit some features in the store edition. We recommend the direct-download edition, coming soon.</p>
+      <p class="compatibility">macOS 14.4 or later</p>
+    </section>
+    <section class="product-section wrap" id="product" aria-label="Actual Better Volume interface">
+      <div class="product-stage">
+        <svg class="flow-background" viewBox="0 0 1200 720" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="flow-base" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b8def5"/><stop offset=".46" stop-color="#5b9edf"/><stop offset="1" stop-color="#174785"/></linearGradient>
+            <linearGradient id="flow-silk" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#effbff" stop-opacity=".7"/><stop offset=".48" stop-color="#a4d6fc" stop-opacity=".42"/><stop offset="1" stop-color="#498ad5" stop-opacity=".05"/></linearGradient>
+            <linearGradient id="flow-deep" x1="0" y1="0" x2="1" y2=".5"><stop stop-color="#1652a0" stop-opacity=".05"/><stop offset=".6" stop-color="#153e88" stop-opacity=".65"/><stop offset="1" stop-color="#2465b7" stop-opacity=".12"/></linearGradient>
+            <linearGradient id="flow-edge"><stop stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#def5ff" stop-opacity=".6"/><stop offset="1" stop-color="#def5ff" stop-opacity="0"/></linearGradient>
+          </defs>
+          <path fill="url(#flow-base)" d="M0 0h1200v720H0z"/>
+          <path class="flow-wave flow-wave-back" fill="url(#flow-deep)" d="M-200 670 C180 780 300 80 670 160 S1100 580 1400 120 L1400 1000H-200Z"/>
+          <path class="flow-wave flow-wave-front" fill="url(#flow-silk)" d="M-200 100 C150 -80 300 570 680 380 S1020 -100 1400 60 L1400 -300H-200Z"/>
+          <path class="flow-wave flow-wave-edge" fill="none" stroke="url(#flow-edge)" stroke-width="1.5" d="M-200 100 C150 -80 300 570 680 380 S1020 -100 1400 60"/>
+        </svg>
+        <div class="main-shot"><img src="assets/volume-panel.png" width="1520" height="1500" fetchpriority="high" alt="Better Volume showing display output, master volume, and separate app volumes"></div>
+        <div class="detail-shots">
+          <figure><figcaption>App volume & playback</figcaption><div class="shot apps-shot"><img src="assets/app-volume.png" width="1440" height="832" alt="Actual app volume and playback controls"></div></figure>
+          <figure><figcaption>Audio outputs</figcaption><div class="shot devices-shot"><img src="assets/devices.png" width="1440" height="768" alt="Actual audio output list with a display and Bluetooth devices"></div></figure>
+        </div>
+      </div>
+      <p class="screenshot-caption">Actual interface shown in Chinese with example apps and devices. Playback support varies by app and edition.</p>
+    </section>
+    <section class="features wrap" id="features" aria-labelledby="features-title">
+      <div class="section-heading"><h2 id="features-title">Less switching. More listening.</h2><p>Adjust your sound in one place.</p></div>
+      <div class="feature-grid">
+        <article><svg class="feature-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M7 5v22M16 5v22M25 5v22"/><path class="slider" d="M4 12h6M13 21h6M22 10h6"/></svg><h3>Adjust or mute any app</h3><p>Apps appear as they play audio. Each volume is saved, so you don’t have to set it again next time.</p></article>
+        <article><svg class="feature-icon" viewBox="0 0 32 32" aria-hidden="true"><rect x="4" y="5" width="24" height="17" rx="3"/><path d="M16 22v5M10 27h12"/></svg><h3>Control display audio, too</h3><p>Adjust HDMI and DisplayPort output using software volume. Switch between headphones, speakers, and displays in the same panel.</p></article>
+        <article><svg class="feature-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="m16 3 11 4v8c0 7-11 14-11 14S5 22 5 15V7Z"/><path d="m11 15 4 4 7-8"/></svg><h3>Keep sudden volume in check</h3><p>Set a volume limit and a safe starting level when switching devices. Audio is processed locally, with no recordings saved.</p></article>
+      </div>
+    </section>
+    <section class="faq wrap" id="faq" aria-labelledby="faq-title"><div><h2 id="faq-title">FAQ</h2><p>Have another question?<br><a href="mailto:onebooksoftware@outlook.com">Contact us <span aria-hidden="true">↗</span></a></p></div><div class="questions">
+      <details><summary>Which systems are supported?</summary><p>Requires macOS 14.4 or later. Check the store listing for the latest requirements and version information.</p></details>
+      <details><summary>Can I adjust an external display’s volume?</summary><p>Yes. Better Volume uses software volume for HDMI or DisplayPort outputs without native volume control. System audio recording permission is required. Compatibility depends on your device and audio output.</p></details>
+      <details><summary>Why is audio recording permission required?</summary><p>The app uses system audio interfaces to adjust volume in real time. Audio stays in memory; no recordings are saved. Read our <a href="https://fitygrey.github.io/volume-control-privacy-policy/">Privacy Policy</a>.</p></details>
+      <details><summary>Where can I download it? What requires Pro?</summary><p>Use “Get the app” to visit the store. Basic per-app volume is free; some advanced audio settings require Pro. See the store and in-app purchase page for current pricing and features.</p></details>
+    </div></section>
+    <section class="download wrap" aria-label="Download Better Volume"><div><img src="assets/icon.png" width="64" height="64" alt=""><div><h2>Better Volume</h2><p>Individual app volumes. Right in your menu bar.</p></div></div><a class="button" href="https://apps.apple.com/app/id6801948961">Get the app <span aria-hidden="true">↗</span></a></section>
+  </main>
+  <footer class="wrap"><a class="brand" href="#"><img src="assets/icon.png" alt="" width="28" height="28">Better Volume</a><div><a href="https://fitygrey.github.io/volume-control-privacy-policy/">Privacy Policy</a><a href="https://fitygrey.github.io/volume-control-privacy-policy/support.html">Support</a><a href="mailto:onebooksoftware@outlook.com">Contact us</a></div></footer>
+</body>
+</html>
