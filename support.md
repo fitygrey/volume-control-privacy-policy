@@ -1,7 +1,76 @@
 ---
 layout: default
-title: Better Volume 技术支持
+title: Better Volume Support
 ---
+
+<style>
+.support-language { display: none; }
+.support-language[lang="en"] { display: block; }
+html[data-support-language="zh"] .support-language[lang="en"] { display: none; }
+html[data-support-language="zh"] .support-language[lang="zh-Hans"] { display: block; }
+.support-language-picker { margin-bottom: 1.5rem; }
+</style>
+<script>
+(function () {
+  var preferred = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+  var language = /^zh(?:-|$)/i.test(preferred) ? 'zh' : 'en';
+  window.setSupportLanguage = function (value) {
+    language = value === 'zh' ? 'zh' : 'en';
+    document.documentElement.dataset.supportLanguage = language;
+    document.documentElement.lang = language === 'zh' ? 'zh-Hans' : 'en';
+    document.title = language === 'zh' ? 'Better Volume 技术支持 | Better Volume' : 'Better Volume Support | Better Volume';
+    var picker = document.getElementById('support-language');
+    if (picker) picker.value = language;
+  };
+  window.setSupportLanguage(language);
+  document.addEventListener('DOMContentLoaded', function () {
+    window.setSupportLanguage(language);
+    document.getElementById('support-language').addEventListener('change', function () {
+      window.setSupportLanguage(this.value);
+    });
+  });
+})();
+</script>
+
+<div class="support-language-picker">
+<label for="support-language">Language / 语言</label>
+<select id="support-language">
+<option value="en">English</option>
+<option value="zh">简体中文</option>
+</select>
+</div>
+
+<div class="support-language" lang="en" markdown="1">
+
+# Better Volume Support
+
+If Better Volume cannot control the volume of an external display:
+
+1. Allow Better Volume to use System Audio Recording in macOS System Settings;
+2. Confirm that the correct output device is selected in the menu bar;
+3. Test control with the master-volume slider or mute button in the menu bar.
+
+## Playback controls
+
+The playback card follows the system's current media session. Track changes and seeking depend on player support. The card is hidden when no current media session is available. Live streams, unknown durations, or player restrictions may disable seeking. Enable or disable playback controls in **Settings → General**.
+
+## Bluetooth and devices
+
+Pair the device in System Settings first. Then choose to show paired Bluetooth devices in Better Volume's output list and grant access when prompted. If a connected device is silent, check that its audio output is ready and that it is not connected to another device. For connection failures or denied access, open System Settings from **Settings → Devices**.
+
+Hiding a device does not unpair it. Restore it in **Settings → Devices → Hidden Devices**. The current output device cannot be hidden.
+
+If the issue continues, copy the diagnostic information from **Settings** and email it to:
+
+[onebooksoftware@outlook.com](mailto:onebooksoftware@outlook.com)
+
+Diagnostics are never uploaded automatically. We receive them only when you choose to send them.
+
+[Privacy Policy](./)
+
+</div>
+
+<div class="support-language" lang="zh-Hans" markdown="1">
 
 # Better Volume 技术支持
 
@@ -29,30 +98,4 @@ title: Better Volume 技术支持
 
 [查看隐私政策](./)
 
----
-
-# Better Volume Support
-
-If Better Volume cannot control the volume of an external display:
-
-1. Allow Better Volume to use System Audio Recording in macOS System Settings;
-2. Confirm that the correct output device is selected in the menu bar;
-3. Test control with the master-volume slider or mute button in the menu bar.
-
-## Playback controls
-
-The playback card follows the system's current media session. Track changes and seeking depend on player support. The card is hidden when no current media session is available. Live streams, unknown durations, or player restrictions may disable seeking. Enable or disable playback controls in **Settings → General**.
-
-## Bluetooth and devices
-
-Pair the device in System Settings first. Then choose to show paired Bluetooth devices in Better Volume's output list and grant access when prompted. If a connected device is silent, check that its audio output is ready and that it is not connected to another device. For connection failures or denied access, open System Settings from **Settings → Devices**.
-
-Hiding a device does not unpair it. Restore it in **Settings → Devices → Hidden Devices**. The current output device cannot be hidden.
-
-If the issue continues, copy the diagnostic information from **Settings** and email it to:
-
-[onebooksoftware@outlook.com](mailto:onebooksoftware@outlook.com)
-
-Diagnostics are never uploaded automatically. We receive them only when you choose to send them.
-
-[Privacy Policy](./)
+</div>
