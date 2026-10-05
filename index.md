@@ -7,7 +7,7 @@ title: Better Volume 隐私政策
 
 生效日期：2026 年 8 月 17 日
 
-最近更新日期：2026 年 9 月 21 日
+最近更新日期：2026 年 10 月 4 日
 
 Better Volume（以下简称“本应用”）由其开发者（以下简称“我们”）提供。本政策说明您使用本应用时，信息如何被处理。
 
@@ -17,7 +17,7 @@ Better Volume（以下简称“本应用”）由其开发者（以下简称“�
 
 为记住您的设置，本应用会在设备本地保存输出设备标识与名称、应用名称与 Bundle ID、音量、静音、声音处理选项及界面偏好。我们无法远程访问这些信息。
 
-启用播放控制时，本应用会在本机读取系统当前媒体会话的播放器、歌曲、歌手、歌曲封面、播放状态和进度，用于展示播放卡片并执行您点击的播放、暂停、切歌或进度调整。歌曲信息和封面仅在内存中使用，不保存为收听历史，也不上传。您可以在设置中关闭播放控制。
+启用播放控制并经您授权后，本应用通过 Apple Music 或 Spotify 的本地自动化接口读取歌曲、歌手、封面、播放状态和进度，并执行您点击的播放、暂停、切歌或进度调整。歌曲信息不上传给我们，不保存为收听历史。Apple Music 封面在本机读取；Spotify 封面会从播放器提供的 Spotify 图片服务地址下载，该服务会收到下载请求及您的 IP 地址。封面仅在内存中缓存。您可以在设置中关闭播放控制，或在系统设置的“隐私与安全性 → 自动化”中撤销授权。
 
 ## 2. 系统权限
 
@@ -41,13 +41,17 @@ Mac App Store 版本不请求输入监控或辅助功能权限，也不安装全
 
 订阅和永久解锁由 Apple 的 StoreKit 与 App Store 处理。本应用会读取 Apple 返回的商品信息和购买权益，以显示价格并解锁功能。我们不会接触或保存您的 Apple ID、银行卡或其他付款信息。
 
+当您主动使用“获取激活码”兑换已有商店购买权益时，本应用会将 Apple 签名的购买凭证通过 HTTPS 发送至我们的授权服务 `license.vastlightyear.com`。服务端向 Apple 核验购买状态，并保存原始交易标识、授权类型、加密激活码及其哈希；领取时还会发送由硬件标识经过产品专用哈希生成的机器标识，并占用一个永久绑定名额。官网版使用相同标识，同机不重复占位；最多绑定三台，不支持停用或换绑。服务端保存机器标识与激活关联；旧版随机安装标识在升级验证时关联至机器标识。不发送原始硬件 UUID 或序列号。我们不要求提供 Apple Account 密码，不会因兑换而创建新订单或发送购买邮件。沙盒与正式交易分开处理。
+
+兑换和激活服务由 DigitalOcean 托管，通过 Cloudflare 提供网络交付与安全防护；这些服务可能处理请求 IP 地址、时间和错误信息。购买核验所需的交易标识会发送给 Apple。信息仅用于提供授权、支持和必要安全检查，不用于广告追踪。有效授权及必要激活关联在授权有效期间保留；终止后不再需要的信息在 90 天内清理，法律义务或未结争议所需记录除外。您可通过下方联系方式申请查询或删除服务端授权数据；删除可能影响后续激活。
+
 Apple 对相关信息的处理受其隐私政策约束：[Apple 隐私政策](https://www.apple.com/legal/privacy/)。
 
 ## 5. 网络与第三方服务
 
 本应用会连接 Apple 服务以加载内购商品、验证购买权益和检查 App Store 版本更新。本应用不包含广告 SDK、第三方分析 SDK、Firebase 或第三方崩溃统计服务。
 
-我们不出售、出租或向第三方提供您的个人信息、音频内容、设备配置或应用音量规则。
+我们不出售或出租您的个人信息。除上述授权服务所需处理或法律要求外，不向第三方提供个人信息；不上传或共享音频内容、设备配置或应用音量规则。
 
 ## 6. 配置导入与导出
 
@@ -78,7 +82,7 @@ Apple 对相关信息的处理受其隐私政策约束：[Apple 隐私政策](ht
 # Better Volume Privacy Policy
 
 **Effective date:** August 17, 2026  
-**Last updated:** September 21, 2026
+**Last updated:** October 4, 2026
 
 Better Volume (the “App”) is provided by its developer (“we”, “us”). This policy explains how information is handled when you use the App.
 
@@ -88,7 +92,7 @@ The App processes sound locally on your Mac. To provide master volume, per-app v
 
 To remember your preferences, the App stores output-device identifiers and names, application names and bundle identifiers, volume and mute settings, audio-processing options, and interface preferences locally on your device. We cannot access this information remotely.
 
-When playback controls are enabled, the App reads the system’s current media session locally, including the player, track, artist, artwork, playback state, and position. This information is used to display the playback card and carry out your play, pause, track-change, and seek actions. Track information and artwork remain in memory, are not saved as listening history, and are not uploaded. Playback controls can be disabled in Settings.
+With your permission, playback controls use the local automation interfaces of Apple Music or Spotify to read track information, artwork, playback state, and position, and carry out your playback actions. Track information is not uploaded to us or stored as listening history. Apple Music artwork is read locally. Spotify artwork is downloaded from the Spotify image service URL supplied by the player; that service receives the request and your IP address. Artwork is cached only in memory. You can disable playback controls in Settings or revoke permission under Privacy & Security → Automation in System Settings.
 
 ## 2. System permissions
 
@@ -112,13 +116,17 @@ The App uses Apple MetricKit locally to count crashes, hangs, and recovery event
 
 Subscriptions and lifetime purchases are processed by Apple through StoreKit and the App Store. The App reads product information and purchase entitlements returned by Apple to display prices and unlock features. We do not receive or store your Apple ID, card details, or other payment information.
 
+When you explicitly choose “Get Activation Code” to redeem an existing store purchase, the App sends the Apple-signed purchase transaction over HTTPS to our licensing service at `license.vastlightyear.com`. The server checks the purchase status with Apple and stores the original transaction identifier, license plan, encrypted activation code and its hash. Claiming also sends a product-scoped hash-derived machine identifier and reserves one permanent device slot. The website edition uses the same identifier, so the same machine does not consume another slot. Up to three machines may be bound, with no deactivation or transfers. The server stores the machine identifier and activation associations; legacy random installation IDs are associated with a machine on verification after upgrading. Raw hardware UUIDs and serial numbers are not transmitted. We do not request your Apple Account password, create a new order or send a purchase email for this redemption. Sandbox and production transactions are handled separately.
+
+The licensing service is hosted by DigitalOcean, with network delivery and security provided by Cloudflare; these providers may process request IP addresses, timestamps and errors. Transaction identifiers needed for purchase verification are sent to Apple. This information is used only for licensing, support and necessary security checks, not advertising tracking. Valid licenses and necessary activation records are kept for the license term; data no longer needed is removed within 90 days after termination, except where legal obligations or unresolved disputes require retention. You can contact us below to request access to or deletion of server-side licensing data; deletion may affect future activation.
+
 Apple processes related information under the [Apple Privacy Policy](https://www.apple.com/legal/privacy/).
 
 ## 5. Network access and third-party services
 
 The App connects to Apple services to load in-app purchase products, verify purchase entitlements, and check the latest App Store version. The App contains no advertising SDK, third-party analytics SDK, Firebase, or third-party crash-reporting service.
 
-We do not sell, rent, or disclose your personal information, audio content, device profiles, or per-app volume rules to third parties.
+We do not sell or rent personal information. Disclosure is limited to the licensing services described above or legal requirements; audio content, device profiles and per-app volume rules are not uploaded or shared.
 
 ## 6. Configuration import and export
 

@@ -52,7 +52,7 @@ If Better Volume cannot control the volume of an external display:
 
 ## Playback controls
 
-The playback card follows the system's current media session. Track changes and seeking depend on player support. The card is hidden when no current media session is available. Live streams, unknown durations, or player restrictions may disable seeking. Enable or disable playback controls in **Settings → General**.
+Playback controls currently support Apple Music and Spotify, not NetEase Cloud Music or browsers. Open the player, then select **Connect** for it under **Settings → General → Playback Controls** and allow automation. An actively playing player takes precedence over paused players; when several players are playing, the current selection remains stable. The card is hidden when no track can be read. Controls and artwork depend on the player. If permission was denied, allow access under **System Settings → Privacy & Security → Automation**.
 
 ## Bluetooth and devices
 
@@ -82,7 +82,7 @@ Diagnostics are never uploaded automatically. We receive them only when you choo
 
 ## 播放控制
 
-播放卡片跟随系统当前媒体会话；切歌和拖动进度的支持情况取决于播放器。没有当前媒体会话时不会显示卡片；直播、未知时长或播放器限制可能导致进度条不可用。可在“设置 → 常规”打开或关闭播放控制。
+播放控制目前支持 Apple Music 和 Spotify，暂不支持网易云音乐或浏览器。先打开播放器，再到“设置 → 常规 → 播放控制”点击对应播放器的“连接”，并允许自动化控制。多个播放器同时打开时优先显示正在播放的播放器；多个播放器同时播放时保持当前选择。没有可读取的曲目时不显示卡片。切歌、进度和封面取决于播放器提供的信息。授权被拒绝后，可在系统设置的“隐私与安全性 → 自动化”中允许控制。
 
 ## 蓝牙与设备管理
 
