@@ -52,7 +52,11 @@ If Better Volume cannot control the volume of an external display:
 
 ## Playback controls
 
-Playback controls currently support Apple Music and Spotify, not NetEase Cloud Music or browsers. Open the player, then select **Connect** for it under **Settings → General → Playback Controls** and allow automation. An actively playing player takes precedence over paused players; when several players are playing, the current selection remains stable. The card is hidden when no track can be read. Controls and artwork depend on the player. If permission was denied, allow access under **System Settings → Privacy & Security → Automation**.
+In the App Store edition, playback controls support Apple Music and Spotify, not NetEase Cloud Music or browsers. Open the player, then select **Connect** for it under **Settings → General → Playback Controls** and allow automation. In version 1.3.4 and later, each connected supported player can show its own card when track information is available. Controls and artwork depend on the player. If permission was denied, allow access under **System Settings → Privacy & Security → Automation**.
+
+## Keyboard volume control
+
+Enable keyboard volume control under **Settings → Keys**. In the App Store edition, use the app’s authorization action to approve the audio driver in System Settings. Outputs with native volume control use that control; fixed-volume outputs such as supported displays use the audio driver. Per-app volume remains available in both cases.
 
 ## Bluetooth and devices
 
@@ -82,7 +86,11 @@ Diagnostics are never uploaded automatically. We receive them only when you choo
 
 ## 播放控制
 
-播放控制目前支持 Apple Music 和 Spotify，暂不支持网易云音乐或浏览器。先打开播放器，再到“设置 → 常规 → 播放控制”点击对应播放器的“连接”，并允许自动化控制。多个播放器同时打开时优先显示正在播放的播放器；多个播放器同时播放时保持当前选择。没有可读取的曲目时不显示卡片。切歌、进度和封面取决于播放器提供的信息。授权被拒绝后，可在系统设置的“隐私与安全性 → 自动化”中允许控制。
+App Store 版的播放控制支持 Apple Music 和 Spotify，暂不支持网易云音乐或浏览器。先打开播放器，再到“设置 → 常规 → 播放控制”点击对应播放器的“连接”，并允许自动化控制。在 1.3.4 及后续版本中，已连接且能读取曲目的播放器会分别显示卡片；没有可读取的曲目时不显示对应卡片。切歌、进度和封面取决于播放器提供的信息。授权被拒绝后，可在系统设置的“隐私与安全性 → 自动化”中允许控制。
+
+## 键盘音量控制
+
+在“设置 → 按键”中开启接管系统键盘音量键。App Store 版可通过应用内的授权操作进入系统设置，允许音频驱动。支持原生音量的设备使用设备自身的音量控制；固定音量的显示器等输出使用音频驱动控制。两种情况下均可独立调节应用音量。
 
 ## 蓝牙与设备管理
 
